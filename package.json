@@ -19,7 +19,8 @@
     "test:watch": "jest --watch",
     "build": "serverless webpack",
     "test:parse": "serverless invoke local --function postlightParser --path fixtures/nytimes.json",
-    "test:html": "serverless invoke local --function parseHtml --path fixtures/html.json"
+    "test:html": "serverless invoke local --function parseHtml --path fixtures/html.json",
+    "start": "node server.js"
   },
   "dependencies": {
     "@postlight/parser": "^2.2.2",
